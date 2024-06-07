@@ -661,7 +661,8 @@ background-image: linear-gradient(
 }
 
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    /* 16 na 8px */
 }
 
 .modal-checkbox {
@@ -771,6 +772,11 @@ background-image: linear-gradient(
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+btn-modal-send:focus, 
+btn-modal-send:hover {
+fill: #ffffff
+}
+
 .check-text {
     font-size: 12px;
     line-height: 117%;
@@ -795,15 +801,15 @@ background-image: linear-gradient(
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     fill: transparent;
+    display: inline-flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.modal-check:checked+.check-text span {
+.modal-check:checked + .check-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
