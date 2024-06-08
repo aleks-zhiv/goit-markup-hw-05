@@ -665,6 +665,10 @@ background-image: linear-gradient(
     /* 16 na 8px */
 }
 
+.modal-field-textarea {
+    margin-bottom: 16px;
+}
+
 .modal-checkbox {
     margin-bottom: 24px;
 }
@@ -781,7 +785,6 @@ fill: #ffffff
     line-height: 117%;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
     align-items: center;
 }
 
