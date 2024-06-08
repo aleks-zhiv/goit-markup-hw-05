@@ -577,6 +577,19 @@ background-image: linear-gradient(
     margin-left: 16px;
 } 
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* backdrop */
 
 .backdrop {
@@ -788,12 +801,12 @@ fill: #ffffff
     align-items: center;
 }
 
+
 .check-link {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
-
 
 .check-check {
     position: relative;
@@ -803,15 +816,15 @@ fill: #ffffff
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     fill: transparent;
-    display: inline-flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text > .check-check {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
