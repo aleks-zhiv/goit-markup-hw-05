@@ -653,13 +653,13 @@ background-image: linear-gradient(
     border: none;
 }
 
-.icon-x {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-btn-x:hover > .icon-x,
 .modal-btn-x:hover > .icon-x {
     fill: #ffffff;
+}
+
+.icon-x {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-modal {
