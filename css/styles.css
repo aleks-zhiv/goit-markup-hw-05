@@ -523,8 +523,7 @@ background-image: linear-gradient(
 }
 
 .container-input {
-    width: 454px;
-    height: 80px;
+    margin-left: auto;
 }
 
 .footer-input {
@@ -607,9 +606,9 @@ background-image: linear-gradient(
 }
 
 .is-open {
-    opacity: 1;
+    /* opacity: 1;
     visibility: visible;
-    pointer-events: auto;
+    pointer-events: auto; */
 }
 
 .modal {
@@ -674,7 +673,6 @@ background-image: linear-gradient(
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-top: 72px;
     margin-bottom: 16px;
 }
 
